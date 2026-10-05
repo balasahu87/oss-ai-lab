@@ -1,0 +1,29 @@
+{
+  "name": "@oss-ai-lab/mcp-enhance",
+  "version": "0.1.0",
+  "description": "MCP servers that enhance LLM capability: memory, web-fetch, structured-repair, rag-retrieve",
+  "type": "module",
+  "bin": {
+    "mcp-enhance": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test dist/smoke.test.js",
+    "prepare": "npm run build"
+  },
+  "keywords": ["mcp", "llm", "rag", "agents", "model-context-protocol"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}

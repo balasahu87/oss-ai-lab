@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llmboost"
+version = "0.1.0"
+description = "LLM capability enhancers: multi-query, self-consistency, critique-revise, JSON repair"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Balaram Sahu" }]
+dependencies = []
+keywords = ["llm", "self-consistency", "prompting", "generative-ai"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

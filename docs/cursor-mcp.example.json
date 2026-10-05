@@ -1,0 +1,12 @@
+# Cursor MCP example — copy paths to absolute on your machine
+{
+  "mcpServers": {
+    "oss-ai-enhance": {
+      "command": "node",
+      "args": ["REPLACE_WITH_ABS/oss-ai-lab/packages/mcp-enhance/dist/index.js"],
+      "env": {
+        "MCP_ENHANCE_MEMORY_DIR": "REPLACE_WITH_ABS/oss-ai-lab/.mcp_memory"
+      }
+    }
+  }
+}
